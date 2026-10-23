@@ -1,0 +1,5 @@
+# 这是一层「组合补丁」：把 rightbar-divider 这一行插进 profile 的插件树。
+# 行 id 在同一 profile 内必须唯一，插件页的启停开关靠它定位。
+- insert:
+    - id: rightbar-divider
+      name: 'dsh-plugin-rightbar-divider'

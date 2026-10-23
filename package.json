@@ -1,0 +1,55 @@
+{
+  "name": "dsh-plugin-rightbar-divider",
+  "version": "0.1.0",
+  "description": "Restores the DSH right sidebar divider drag after whole-interface zoom, with a wider hit area and a hover affordance.",
+  "type": "module",
+  "license": "MIT",
+  "author": "1700563146",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1700563146/dsh-plugin-rightbar-divider.git"
+  },
+  "homepage": "https://github.com/1700563146/dsh-plugin-rightbar-divider#readme",
+  "bugs": {
+    "url": "https://github.com/1700563146/dsh-plugin-rightbar-divider/issues"
+  },
+  "icon": "./icon.svg",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "sidebar",
+    "divider",
+    "resize",
+    "zoom",
+    "ui"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-layout"]
+    }
+  }
+}

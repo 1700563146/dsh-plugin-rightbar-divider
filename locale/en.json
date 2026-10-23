@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Right Sidebar Divider",
+    "description": "Keeps the right sidebar divider draggable when the UI is zoomed, with a wider hit area."
+  }
+}

@@ -63,7 +63,7 @@ DSH 的右栏其实**本来就有**拖拽手柄；拖不动不是宿主没做，
 **本地开发**
 
 ```powershell
-cd D:\Code\rightbar-divider
+cd D:\Code\dsh-plugins\rightbar-divider
 # 在 插件 → 添加插件 里填这个绝对路径
 ```
 
@@ -72,7 +72,7 @@ cd D:\Code\rightbar-divider
 - 逻辑自检（不碰 profile、不开浏览器）：
 
   ```powershell
-  cd D:\Code\rightbar-divider
+  cd D:\Code\dsh-plugins\rightbar-divider
   node test.mjs
   ```
 
